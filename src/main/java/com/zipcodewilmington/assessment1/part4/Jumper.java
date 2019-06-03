@@ -13,7 +13,7 @@ public class Jumper {
         int j = jumpHeight;
 
 
-        int jumps = (int) Math.ceil(k/j);
+        int jumps = (int)Math.ceil(k/j);
 
         return jumps;
 

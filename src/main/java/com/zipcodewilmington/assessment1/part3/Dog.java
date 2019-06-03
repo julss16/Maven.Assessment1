@@ -9,6 +9,8 @@ public class Dog extends Pet {
      * @param age age of this dog
      */
     public Dog(String name, Integer age) {
+        name= " ";
+
 
     }
 
@@ -38,6 +40,10 @@ public class Dog extends Pet {
      * @return bark as a string
      */
     public String speak() {
-        return null;
+
+        String talk = "Bark";
+
+        return  talk;
     }
 }
+

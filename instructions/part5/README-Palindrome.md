@@ -1,4 +1,4 @@
-## Palindrome Counter
+### Palindrome Counter
 
 * Complete the `countPalindromes` function in your editor.
 * It has 1 parameter: a string, `s`.

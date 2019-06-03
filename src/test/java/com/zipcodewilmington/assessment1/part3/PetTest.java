@@ -1,6 +1,7 @@
 package com.zipcodewilmington.assessment1.part3;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -32,6 +33,7 @@ public class PetTest {
         // Then
         Assert.assertEquals(expected, actual);
     }
+
 
 
     @Test

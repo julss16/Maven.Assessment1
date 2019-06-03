@@ -38,15 +38,14 @@ public class ArrayUtils {
 
         int n = (int) objectToRemove;
         //Object[] newArray = new Object[objectArray.length];
-        for (int i = 0; i < objectArray.length - 1; i++) {
+        for (int i = 1; i < objectArray.length - 1; i++) {
 
-            if (objectArray[i] != objectArray[n]) {
+            if (objectArray[i] != objectArray[n+1]) {
 
                 objectArray[i] = objectArray[i];
-            } else if (objectArray[i] == objectArray[n]) {
+            } //else if (objectArray[i] == objectArray[n]) {
 
 
-            }
 
 
         }
