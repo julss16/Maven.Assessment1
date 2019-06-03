@@ -7,8 +7,9 @@ public class Cat extends Pet {
     /**
      * @param name name of this Cat
      * @param age age of this Cat
-     */
-    public Cat(String name, Integer age) {
+     */// public static String invertCasing(String str) {
+
+    public Cat (String name, Integer age) {
 
     }
 
@@ -38,6 +39,9 @@ public class Cat extends Pet {
      * @return meow as a string
      */
     public String speak() {
-        return null;
+
+        String talk= "Meow";
+
+        return talk;
     }
 }

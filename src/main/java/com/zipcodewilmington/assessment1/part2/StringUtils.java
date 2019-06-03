@@ -11,7 +11,10 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return an array of strings, each element representative of a respective word in the sentence
      */
     public static String[] getWords(String sentence) {
-        return null;
+
+        String[] words = sentence.split(" ");
+
+        return words;
     }
 
 
@@ -21,7 +24,16 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word of the sentence
      */
     public static String getFirstWord(String sentence) {
-        return null;
+
+
+
+        for (int i=0; i < sentence.length(); i++){
+            if (sentence.charAt(i)== ' '){
+                return sentence.substring(0, i);
+            }
+                    }
+
+        return sentence;
     }
 
     /**
@@ -30,8 +42,19 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order
      */
     public static String reverseFirstWord(String sentence) {
-        return null;
-    }
+
+        String first = new StringBuffer(sentence).reverse().toString();
+
+       //for (int i = 0; i < first.length() -1; i++) {
+            //if (first.charAt(i) == ' ') {
+               // return first.substring(0, i);
+        String arr[] = first.split(" ",2);
+        String first1 = arr[1];
+
+
+        return first1 ;
+        }
+
 
     /**
      * @param sentence a string containing words delimited by spaces, representative of a sentence
@@ -39,8 +62,20 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        return null;
+
+        String first = new StringBuffer(sentence).reverse().toString();
+
+        //for (int i = 0; i < first.length() -1; i++) {
+        //if (first.charAt(i) == ' ') {
+        // return first.substring(0, i);
+        String arr[] = first.split(" ",2);
+        String first1 = arr[1];
+        String firstcap = first1.substring(0,1).toUpperCase() + first1.substring(1);
+
+        return firstcap ;
+
     }
+
 
 
     /**
@@ -50,7 +85,9 @@ public class StringUtils {
      * given a string and index, return an identical string excluding the character at the specified index
      */
     public static String removeCharacterAtIndex(String str, int index) {
-        return null;
+
+
+        return str.substring(0, index).concat(str.substring(index +1));
     }
 
 }
